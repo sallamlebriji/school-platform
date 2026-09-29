@@ -1,0 +1,46 @@
+{
+  "name": "athenee-server",
+  "version": "1.0.0",
+  "description": "Athénée School OS — API Express + MySQL (multi-tenant)",
+  "main": "src/server.js",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "db:init": "node scripts/db-init.js",
+    "db:migrate": "node scripts/db-migrate.js",
+    "db:seed": "node scripts/seed.js",
+    "vapid": "node scripts/vapid.js",
+    "db:reset": "node scripts/db-init.js --drop && node scripts/seed.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.4.0",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^10.0.12",
+    "otplib": "^12.0.1",
+    "pdfkit": "^0.15.0",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.7.5",
+    "stripe": "^22.6.2",
+    "web-push": "^3.6.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

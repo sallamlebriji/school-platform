@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Athénée — Toute votre école. Une seule plateforme.</title>
+  <meta name="description" content="Athénée est l'ERP scolaire des écoles privées : élèves, enseignants, parents, cours en ligne, transport, paiements et communication depuis un espace unique.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2313254A'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23EFE3CB' font-family='Georgia'>A</text></svg>">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body class="landing">
+
+<header class="lnav" id="lnav">
+  <div class="wrap">
+    <a class="logo" href="#"><span class="m">A</span>Athénée</a>
+    <nav>
+      <a href="#pourquoi">Pourquoi Athénée</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#securite">Sécurité</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="cta"><a class="btn btn-ghost" href="app.html">Se connecter</a><a class="btn btn-primary" href="#demo">Demander une démo</a></div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="inner">
+      <span class="pill"><b>Nouveau</b> Assistant IA pédagogique intégré <i data-i="right" class="sm"></i></span>
+      <h1>Toute votre école.<br><em>Une seule plateforme.</em></h1>
+      <p class="lead">Gérez vos élèves, enseignants, parents, cours, transport, paiements et communication depuis un espace unique.</p>
+      <div class="ctas"><a class="btn btn-primary btn-lg" href="#demo">Demander une démo <i data-i="right" class="sm"></i></a><a class="btn btn-ghost btn-lg" href="app.html"><i data-i="play" class="sm"></i> Explorer la plateforme</a></div>
+      <div class="trust"><span><i data-i="shield" class="sm"></i> Données hébergées & chiffrées</span><span><i data-i="checkc" class="sm"></i> Déploiement en 2 semaines</span><span><i data-i="star" class="sm"></i> 4,8/5 par les directions</span></div>
+    </div>
+
+    <div class="mock-wrap reveal">
+      <div class="float-card" style="left:-30px;top:120px"><span class="ic" style="background:var(--success-bg);color:var(--success)"><i data-i="transport"></i></span><div><b>Bus Ligne 2 · arrivé</b><span class="muted">Sofia est descendue du bus · 17:08</span></div></div>
+      <div class="float-card" style="right:-24px;top:300px;animation-delay:-3s"><span class="ic" style="background:var(--gold-soft);color:var(--gold-600)"><i data-i="grades"></i></span><div><b>Adam a obtenu 16/20</b><span class="muted">Mathématiques · Contrôle 3</span></div></div>
+      <div class="mock">
+        <div class="ms">
+          <div class="b"><span class="brand-mark" style="width:26px;height:26px;font-size:14px;border-radius:7px">A</span>Athénée</div>
+          <div class="i on"><i data-i="dashboard" class="sm"></i>Tableau de bord</div><div class="i"><i data-i="students" class="sm"></i>Élèves</div><div class="i"><i data-i="teachers" class="sm"></i>Enseignants</div><div class="i"><i data-i="timetable" class="sm"></i>Emploi du temps</div><div class="i"><i data-i="grades" class="sm"></i>Notes</div><div class="i"><i data-i="elearning" class="sm"></i>Cours en ligne</div><div class="i"><i data-i="transport" class="sm"></i>Transport</div><div class="i"><i data-i="finance" class="sm"></i>Finance</div><div class="i"><i data-i="analytics" class="sm"></i>Analytics</div>
+        </div>
+        <div class="mc">
+          <div class="mh"><div><h4>Bonjour, Nadia</h4><span class="muted" style="font-size:12px">Groupe Scolaire Al Farabi · Casablanca</span></div><span class="btn btn-primary btn-sm"><i data-i="plus" class="sm"></i> Nouvelle action</span></div>
+          <div class="mk">
+            <div class="k"><div class="l">Élèves</div><div class="v">637</div><div class="d">▲ 4,8 %</div></div>
+            <div class="k"><div class="l">Taux de présence</div><div class="v">98,4 %</div><div class="d">▲ 0,6 %</div></div>
+            <div class="k"><div class="l">Moyenne générale</div><div class="v">12,70</div><div class="d">▲ 0,3</div></div>
+            <div class="k"><div class="l">Revenus du mois</div><div class="v">2,19 M</div><div class="d">▲ 7,2 %</div></div>
+          </div>
+          <div class="mg">
+            <div class="c"><div class="t">Revenus mensuels</div><div id="mkLine"></div></div>
+            <div class="c"><div class="t">Répartition des élèves</div><div id="mkDonut"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="logos wrap"><span class="eyebrow">Ils nous font confiance</span>
+  <div class="row"><span>Al Farabi</span><span>Lumière</span><span>Les Orangers</span><span>Lycée Atlas</span><span>Ibn Rochd</span><span>Collège Horizon</span></div>
+</div>
+
+<!-- ============ POURQUOI ============ -->
+<section id="pourquoi">
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">Pourquoi notre plateforme ?</span><h2>Le système central de votre établissement</h2><p>Fini les tableurs, les cahiers papier et les dix logiciels qui ne se parlent pas. Athénée réunit la gestion administrative, pédagogique, financière et logistique.</p></div>
+    <div class="why">
+      <div class="w reveal"><div class="ic"><i data-i="layers"></i></div><h3>Tout-en-un</h3><p>22 modules intégrés, une seule base de données, une seule connexion pour toute la communauté éducative.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="zap"></i></div><h3>Simple & rapide</h3><p>Une interface pensée pour la direction, les enseignants, les parents et les élèves. Prise en main en une heure.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="sparkles"></i></div><h3>Intelligent</h3><p>Un assistant IA qui génère des quiz, analyse les performances et répond aux questions des parents.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="shield"></i></div><h3>Sécurisé</h3><p>Chiffrement, 2FA, permissions par rôle, journal d'audit et isolation stricte des données de chaque école.</p></div>
+    </div>
+    <div class="stats reveal"><div><div class="n">-12 h</div><div class="l">de tâches administratives / semaine</div></div><div><div class="n">+18 %</div><div class="l">de taux de recouvrement</div></div><div><div class="n">96 %</div><div class="l">des parents connectés chaque mois</div></div><div><div class="n">2 sem.</div><div class="l">pour déployer l'établissement</div></div></div>
+  </div>
+</section>
+
+<!-- ============ FONCTIONNALITÉS ============ -->
+<section id="fonctionnalites" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">Fonctionnalités</span><h2>Chaque dimension de la vie scolaire</h2></div>
+
+    <div class="feat reveal">
+      <div><span class="eyebrow">Gestion scolaire</span><h3>Le dossier élève 360°, enfin complet</h3><p>Informations personnelles, parents, documents, notes, absences, paiements, transport, santé et activités : tout est réuni sur une seule fiche.</p>
+        <ul><li><i data-i="check" class="sm"></i>Emploi du temps drag & drop</li><li><i data-i="check" class="sm"></i>Appel en 30 secondes</li><li><i data-i="check" class="sm"></i>Moyennes & bulletins automatiques</li><li><i data-i="check" class="sm"></i>Inscriptions en ligne</li><li><i data-i="check" class="sm"></i>Documents PDF à votre logo</li><li><i data-i="check" class="sm"></i>Remplacements d'enseignants</li></ul></div>
+      <div class="panel"><div class="row" style="gap:14px;margin-bottom:16px"><div class="avatar lg" style="background:#EFE3CB;color:#7A5A2E">LS</div><div><div class="serif" style="font-size:20px">Léa Squalli</div><div class="muted" style="font-size:12.5px">2nde B · Lycée · 15 ans</div></div><span class="badge success" style="margin-left:auto">Présente</span></div><div id="fGrades"></div></div>
+    </div>
+
+    <div class="feat rev reveal">
+      <div><span class="eyebrow">E-learning</span><h3>Une plateforme d'apprentissage intégrée</h3><p>Les enseignants publient cours, vidéos, PDF, exercices et quiz. Les élèves suivent leur progression dans un Learning Dashboard motivant.</p>
+        <ul><li><i data-i="check" class="sm"></i>Cours & chapitres</li><li><i data-i="check" class="sm"></i>Quiz auto-corrigés</li><li><i data-i="check" class="sm"></i>Devoirs & corrections</li><li><i data-i="check" class="sm"></i>Bibliothèque numérique</li></ul></div>
+      <div class="panel navy" style="display:flex;gap:24px;align-items:center"><div id="fRing"></div><div><div class="eyebrow" style="color:var(--gold-soft)">Learning dashboard</div><div class="serif" style="font-size:26px;margin:6px 0">Progression : 68 %</div><div style="color:#AEB9D2;font-size:14px">2 cours terminés · 4 en cours · série de 9 jours</div><div class="bar" style="background:rgba(255,255,255,.12);margin-top:16px"><i style="width:68%;background:var(--gold)"></i></div></div></div>
+    </div>
+
+    <div class="feat reveal">
+      <div><span class="eyebrow">Transport scolaire</span><h3>Chaque bus suivi en temps réel</h3><p>GPS, heure d'arrivée estimée, retards, et pointage QR Code / RFID / NFC. Les parents sont notifiés quand leur enfant monte ou descend du bus.</p>
+        <ul><li><i data-i="check" class="sm"></i>Lignes, arrêts, horaires</li><li><i data-i="check" class="sm"></i>Chauffeurs & accompagnateurs</li><li><i data-i="check" class="sm"></i>Alertes « bus proche »</li><li><i data-i="check" class="sm"></i>Journal de sécurité</li></ul></div>
+      <div class="panel" style="padding:0"><div class="map" style="border:0;border-radius:0" id="fMap"></div></div>
+    </div>
+
+    <div class="feat rev reveal">
+      <div><span class="eyebrow">Communication</span><h3>Parents, enseignants et administration, connectés</h3><p>Messagerie, annonces, groupes et notifications intelligentes via l'application, l'email, le push et le SMS.</p>
+        <ul><li><i data-i="check" class="sm"></i>Chat parent ↔ enseignant</li><li><i data-i="check" class="sm"></i>Annonces ciblées</li><li><i data-i="check" class="sm"></i>Tickets de réclamation</li><li><i data-i="check" class="sm"></i>Calendrier scolaire</li></ul></div>
+      <div class="panel" style="display:grid;gap:10px">
+        <div class="float-card" style="position:static;animation:none;box-shadow:var(--sh-1)"><span class="ic" style="background:var(--danger-bg);color:var(--danger)"><i data-i="alert"></i></span><div><b>Votre enfant est absent aujourd'hui.</b><span class="muted">Merci de justifier l'absence · 08:32</span></div></div>
+        <div class="float-card" style="position:static;animation:none;box-shadow:var(--sh-1)"><span class="ic" style="background:var(--info-bg);color:var(--info)"><i data-i="transport"></i></span><div><b>Le bus scolaire arrivera dans 10 minutes.</b><span class="muted">Ligne 3 — Californie · 07:04</span></div></div>
+        <div class="float-card" style="position:static;animation:none;box-shadow:var(--sh-1)"><span class="ic" style="background:var(--warning-bg);color:var(--warning)"><i data-i="finance"></i></span><div><b>Le paiement du mois est en attente.</b><span class="muted">Scolarité octobre · payer en ligne</span></div></div>
+        <div class="float-card" style="position:static;animation:none;box-shadow:var(--sh-1)"><span class="ic" style="background:var(--navy-50);color:var(--navy-700)"><i data-i="documents"></i></span><div><b>Un nouveau bulletin est disponible.</b><span class="muted">Trimestre 1 · télécharger le PDF</span></div></div>
+      </div>
+    </div>
+
+    <div class="feat reveal">
+      <div><span class="eyebrow">Finance</span><h3>Des encaissements maîtrisés</h3><p>Frais d'inscription, scolarité, transport, cantine et activités. Échéanciers, paiement en ligne, relances automatiques et reçus instantanés.</p>
+        <ul><li><i data-i="check" class="sm"></i>Paiement en ligne sécurisé</li><li><i data-i="check" class="sm"></i>Relances automatiques</li><li><i data-i="check" class="sm"></i>Reçus PDF</li><li><i data-i="check" class="sm"></i>Export comptable</li></ul></div>
+      <div class="panel"><div class="row between" style="margin-bottom:8px"><b>Revenus mensuels</b><span class="badge success">+8,4 % vs N-1</span></div><div id="fBars"></div></div>
+    </div>
+
+    <div class="feat rev reveal">
+      <div><span class="eyebrow">Analytics & IA</span><h3>Pilotez avec des données, pas des intuitions</h3><p>Performance par classe et par matière, absentéisme, réinscriptions, taux de paiement, satisfaction. Et un assistant IA qui détecte les élèves à accompagner.</p>
+        <ul><li><i data-i="check" class="sm"></i>Filtres année, niveau, classe</li><li><i data-i="check" class="sm"></i>Rapports générés par l'IA</li><li><i data-i="check" class="sm"></i>Génération de quiz & fiches</li><li><i data-i="check" class="sm"></i>Chatbot pour les parents</li></ul></div>
+      <div class="panel"><div class="row" style="margin-bottom:12px"><span class="dot-ic" style="background:var(--navy-800);color:var(--gold-soft)"><i data-i="sparkles" class="sm"></i></span><b>Assistant IA</b></div>
+        <div class="msg out" style="margin-left:auto;max-width:80%">Identifie les élèves en difficulté en 4e A</div>
+        <div class="msg in" style="max-width:92%;margin-top:10px;font-size:13px"><b>3 élèves identifiés</b> (moyenne &lt; 9,5).<br>Matière la plus fragile : <b>Physique-Chimie</b>.<br><span style="color:var(--gold)">•</span> Tutorat 2 × 45 min / semaine<br><span style="color:var(--gold)">•</span> Parcours e-learning de remédiation<br><span style="color:var(--gold)">•</span> Rendez-vous parents sous 15 jours</div>
+      </div>
+    </div>
+
+    <div class="sh reveal" style="margin:70px auto 30px"><h2 style="font-size:32px">Tous les modules, inclus</h2></div>
+    <div class="mods reveal" id="mods"></div>
+  </div>
+</section>
+
+<!-- ============ SÉCURITÉ ============ -->
+<section id="securite" style="background:var(--beige-50);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">Sécurité & multi-tenant</span><h2>Les données de vos élèves méritent le meilleur</h2><p>Chaque école dispose de son espace strictement isolé. Aucun établissement ne peut accéder aux données d'un autre.</p></div>
+    <div class="why">
+      <div class="w reveal"><div class="ic"><i data-i="lock"></i></div><h3>Chiffrement</h3><p>TLS 1.3 en transit, AES-256 au repos, chiffrement applicatif des données de santé.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="key"></i></div><h3>RBAC & 2FA</h3><p>Permissions fines par rôle, double authentification, SSO Google / Microsoft, gestion des sessions.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="layers"></i></div><h3>Isolation des écoles</h3><p>Row-Level Security au niveau de la base : chaque requête est filtrée par établissement.</p></div>
+      <div class="w reveal"><div class="ic"><i data-i="eye"></i></div><h3>Audit & sauvegardes</h3><p>Journal d'audit immuable, sauvegardes chiffrées toutes les 6 h, restauration testée.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÉMOIGNAGES ============ -->
+<section>
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">Témoignages</span><h2>Ce qu'en disent les établissements</h2></div>
+    <div class="testi">
+      <div class="t reveal"><div class="q">Nous avons remplacé cinq outils par Athénée. La direction a enfin une vision claire de l'établissement, en temps réel.</div><div class="a"><div class="avatar" style="background:#E6EBF5">NB</div><div><b>Nadia B.</b><div class="muted">Directrice · groupe scolaire, Casablanca</div></div></div></div>
+      <div class="t reveal"><div class="q">Le suivi du bus et les notifications de montée ont changé le quotidien des parents. Les appels au secrétariat ont chuté.</div><div class="a"><div class="avatar" style="background:#EFE3CB">KM</div><div><b>Karim M.</b><div class="muted">Responsable logistique · Rabat</div></div></div></div>
+      <div class="t reveal"><div class="q">Je saisis mes notes, publie mes cours et génère un quiz en quelques minutes. C'est l'outil que j'attendais.</div><div class="a"><div class="avatar" style="background:#E3EEE8">SL</div><div><b>Sophie L.</b><div class="muted">Professeure de mathématiques</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TARIFS ============ -->
+<section id="tarifs" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">Tarifs</span><h2>Un prix juste, par élève</h2><p>Sans frais cachés. Formation, migration des données et support inclus.</p>
+      <div class="toggle" id="bill"><button class="on" data-b="m">Mensuel</button><button data-b="y">Annuel <span class="badge gold plain" style="height:18px;margin-left:4px">-15 %</span></button></div></div>
+    <div class="price">
+      <div class="p reveal"><h3>Essentiel</h3><span class="muted">Pour les écoles jusqu'à 400 élèves</span><div class="amt"><span data-p="19">19</span> DH</div><span class="muted">par élève / mois</span><ul><li><i data-i="check" class="sm"></i>Élèves, classes, notes, présences</li><li><i data-i="check" class="sm"></i>Espaces parents & enseignants</li><li><i data-i="check" class="sm"></i>Communication & calendrier</li><li><i data-i="check" class="sm"></i>Finance & reçus</li><li><i data-i="check" class="sm"></i>Support par email</li></ul><a class="btn btn-ghost" href="#demo">Commencer</a></div>
+      <div class="p hl reveal"><div class="row between"><h3>Premium</h3><span class="badge gold">Le plus choisi</span></div><span class="muted">Pour les groupes scolaires</span><div class="amt"><span data-p="29">29</span> DH</div><span class="muted">par élève / mois</span><ul><li><i data-i="check" class="sm"></i>Tout Essentiel, plus :</li><li><i data-i="check" class="sm"></i>E-learning & bibliothèque</li><li><i data-i="check" class="sm"></i>Transport GPS & QR/RFID</li><li><i data-i="check" class="sm"></i>Analytics avancés</li><li><i data-i="check" class="sm"></i>Assistant IA</li><li><i data-i="check" class="sm"></i>Support prioritaire</li></ul><a class="btn btn-gold" href="#demo">Demander une démo</a></div>
+      <div class="p reveal"><h3>Groupe</h3><span class="muted">Réseaux multi-établissements</span><div class="amt" style="font-size:36px;margin-top:24px">Sur devis</div><span class="muted">&nbsp;</span><ul><li><i data-i="check" class="sm"></i>Multi-écoles consolidé</li><li><i data-i="check" class="sm"></i>Domaine & marque personnalisés</li><li><i data-i="check" class="sm"></i>SSO SAML, API, intégrations</li><li><i data-i="check" class="sm"></i>SLA 99,9 % & DPO dédié</li></ul><a class="btn btn-ghost" href="#demo">Contacter les ventes</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh reveal"><span class="eyebrow">FAQ</span><h2>Questions fréquentes</h2></div>
+    <div class="faq">
+      <details open><summary>Combien de temps faut-il pour déployer Athénée ?</summary><p>En moyenne deux semaines : import de vos élèves, classes et enseignants, paramétrage des frais et des règles de calcul, puis formation des équipes. Nous migrons vos données existantes (Excel, ancien logiciel).</p></details>
+      <details><summary>Les données de mon école sont-elles isolées des autres établissements ?</summary><p>Oui. Chaque établissement est un espace (tenant) strictement isolé : filtrage systématique par établissement au niveau de la base de données (Row-Level Security), clés de chiffrement dédiées et journal d'audit.</p></details>
+      <details><summary>Les parents doivent-ils installer une application ?</summary><p>Ils peuvent utiliser l'application mobile (iOS / Android) ou simplement le navigateur. Un même compte parent gère tous ses enfants.</p></details>
+      <details><summary>Peut-on personnaliser les règles de calcul des moyennes ?</summary><p>Oui : coefficients par évaluation et par matière, trimestres ou semestres, arrondis, classement interne activable ou non, seuil de réussite.</p></details>
+      <details><summary>Comment fonctionne le suivi des bus ?</summary><p>Un boîtier GPS ou le smartphone de l'accompagnateur transmet la position. Les élèves badgent (QR Code, RFID ou NFC) à la montée et à la descente et les parents reçoivent une notification instantanée.</p></details>
+      <details><summary>L'assistant IA a-t-il accès aux données sensibles ?</summary><p>Non. L'assistant ne voit que les données autorisées par le rôle de l'utilisateur, jamais les données de santé. Les requêtes sont journalisées et aucune donnée n'est utilisée pour entraîner de modèle.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DÉMO ============ -->
+<section id="demo" style="padding-top:20px">
+  <div class="wrap">
+    <div class="demo reveal">
+      <div style="position:relative;z-index:1"><span class="eyebrow" style="color:var(--gold-soft)">Demande de démo</span><h2>Découvrez Athénée avec vos propres données</h2><p>Un expert vous présente la plateforme en 30 minutes, adaptée à votre établissement : cycles, effectifs, transport, frais.</p>
+        <div class="stack" style="gap:12px;margin-top:28px;color:#C9D2E6;font-size:14px"><span class="row"><i data-i="checkc" class="sm"></i> Démonstration personnalisée</span><span class="row"><i data-i="checkc" class="sm"></i> Estimation du retour sur investissement</span><span class="row"><i data-i="checkc" class="sm"></i> Plan de migration offert</span></div></div>
+      <form id="demoForm">
+        <div class="form-grid"><div class="field"><label>Prénom & nom</label><input class="input" required name="n"></div><div class="field"><label>Fonction</label><select class="select"><option>Direction</option><option>Administration</option><option>Fondateur / Gérant</option><option>Autre</option></select></div></div>
+        <div class="field"><label>Établissement</label><input class="input" required></div>
+        <div class="form-grid"><div class="field"><label>Email professionnel</label><input class="input" type="email" required></div><div class="field"><label>Nombre d'élèves</label><select class="select"><option>Moins de 200</option><option>200 – 500</option><option>500 – 1 000</option><option>Plus de 1 000</option></select></div></div>
+        <button class="btn btn-primary btn-lg" type="submit">Planifier ma démo</button>
+        <span class="muted" style="font-size:11.5px">Vos informations ne sont utilisées que pour vous recontacter.</span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="#" style="display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-size:22px;color:var(--ink)"><span class="brand-mark" style="width:32px;height:32px;font-size:17px">A</span>Athénée</a><p style="margin-top:14px;max-width:320px">L'ERP scolaire intelligent des écoles privées et groupes scolaires.</p></div>
+      <div><h5>Produit</h5><a href="#fonctionnalites">Fonctionnalités</a><a href="#tarifs">Tarifs</a><a href="app.html">Démo en ligne</a></div>
+      <div><h5>Ressources</h5><a href="#faq">FAQ</a><a href="docs/ARCHITECTURE.md">Architecture</a><a href="#securite">Sécurité</a></div>
+      <div><h5>Contact</h5><a href="#demo">Demander une démo</a><a href="#demo">Support</a></div>
+    </div>
+    <div class="row between" style="border-top:1px solid var(--line);padding-top:24px"><span>© 2026 Athénée School OS</span><span>Mentions légales · Confidentialité</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/ui.js"></script>
+<script>
+(function () {
+  document.querySelectorAll('i[data-i]').forEach(i => { i.outerHTML = UI.icon(i.dataset.i, i.className); });
+  const d = DB.get('alfarabi');
+  document.getElementById('mkLine').innerHTML = UI.line(d.revenueMonths, [{ name: 'Revenus', color: '#1D3462', values: d.revenue, area: true }, { name: 'N-1', color: '#B08D57', values: d.revenuePrev, dash: true }], { h: 200, left: 40, fmt: v => UI.kmoney(v, 'MAD'), axisFmt: v => Math.round(v / 1000) + 'k' });
+  document.getElementById('mkDonut').innerHTML = UI.donut(d.tenant.cycles.map((c, i) => ({ label: c, value: d.students.filter(s => d.classes.find(x => x.id === s.classId).cycle === c).length, color: ['#1D3462', '#B08D57', '#6F8FC4', '#8FB0A0'][i] })), { size: 120, thick: 13, sub: 'élèves', legend: false });
+  document.getElementById('fGrades').innerHTML = UI.hbars([['Mathématiques', 15.5], ['Français', 14], ['Physique-Chimie', 16.25], ['Anglais', 17], ['Histoire-Géo', 13.5]].map(x => ({ label: x[0], value: x[1] })), { max: 20, fmt: v => UI.dec(v) + '/20' });
+  document.getElementById('fRing').innerHTML = UI.ring(68, { size: 120, w: 9, color: 'var(--gold)', track: 'rgba(255,255,255,.12)', text: '#fff' });
+  document.getElementById('fBars').innerHTML = UI.bars(d.revenueMonths.slice(0, 10), [{ name: 'Encaissé', color: '#1D3462', values: d.revenue.slice(0, 10) }], { h: 220, left: 40, fmt: v => UI.kmoney(v, 'MAD'), axisFmt: v => Math.round(v / 1000) + 'k', highlight: 1 });
+  // mini carte transport
+  const lines = d.buses.map(b => `<polyline points="${b.stops.map(s => s.x + ',' + s.y).join(' ')}" fill="none" stroke="${b.color}" stroke-width="4" stroke-linecap="round" opacity=".85"/>` + `<circle cx="${b.stops[1].x}" cy="${b.stops[1].y}" r="10" fill="${b.color}" stroke="#fff" stroke-width="3"/>`).join('');
+  let roads = ''; for (let i = 0; i < 9; i++) roads += `<path d="M0 ${60 + i * 62} C 300 ${40 + i * 62}, 600 ${90 + i * 62}, 960 ${55 + i * 62}" stroke="#fff" stroke-width="${i % 3 ? 3 : 7}" fill="none"/>`; for (let i = 0; i < 11; i++) roads += `<path d="M${40 + i * 92} 0 C ${60 + i * 92} 200, ${20 + i * 92} 400, ${50 + i * 92} 600" stroke="#fff" stroke-width="${i % 4 ? 3 : 6}" fill="none"/>`;
+  document.getElementById('fMap').innerHTML = `<svg viewBox="140 60 680 480">${roads}${lines}<rect x="${d.school.x - 15}" y="${d.school.y - 15}" width="30" height="30" rx="8" fill="#13254A" stroke="#B08D57" stroke-width="2"/></svg>`;
+  const mods = [['dashboard', 'Dashboard'], ['students', 'Élèves'], ['parents', 'Parents'], ['teachers', 'Enseignants'], ['classes', 'Classes'], ['timetable', 'Emploi du temps'], ['attendance', 'Présences'], ['grades', 'Notes'], ['homework', 'Devoirs'], ['elearning', 'Cours en ligne'], ['library', 'Bibliothèque'], ['transport', 'Transport'], ['canteen', 'Cantine'], ['activities', 'Activités'], ['health', 'Infirmerie'], ['lost', 'Objets perdus'], ['documents', 'Documents'], ['communication', 'Communication'], ['calendar', 'Calendrier'], ['finance', 'Finance'], ['analytics', 'Analytics'], ['support', 'Support'], ['enroll', 'Inscriptions'], ['sparkles', 'Assistant IA']];
+  document.getElementById('mods').innerHTML = mods.map(m => `<div>${UI.icon(m[0])}${m[1]}</div>`).join('');
+  document.querySelectorAll('#bill button').forEach(b => b.onclick = () => { document.querySelectorAll('#bill button').forEach(x => x.classList.toggle('on', x === b)); document.querySelectorAll('[data-p]').forEach(p => p.textContent = b.dataset.b === 'y' ? Math.round(p.dataset.p * .85) : p.dataset.p); });
+  document.getElementById('demoForm').onsubmit = e => { e.preventDefault(); e.target.innerHTML = `<div style="text-align:center;padding:30px 10px"><div class="dot-ic success" style="margin:0 auto 14px;width:52px;height:52px">${UI.icon('check', 'lg')}</div><h3 class="serif" style="font-size:24px;font-weight:500">Merci !</h3><p class="muted" style="margin-top:8px">Un expert Athénée vous contacte sous 24 h ouvrées. En attendant, <a href="app.html" style="color:var(--navy-700);text-decoration:underline">explorez la démo</a>.</p></div>`; };
+  const nav = document.getElementById('lnav'); addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10));
+  const reveal = () => document.querySelectorAll('.reveal:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight - 40) el.classList.add('in'); });
+  addEventListener('scroll', reveal, { passive: true }); addEventListener('resize', reveal); reveal();
+})();
+</script>
+</body>
+</html>

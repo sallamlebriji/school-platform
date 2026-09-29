@@ -1,0 +1,18 @@
+# Dépendances et builds
+node_modules/
+dist/
+
+# Secrets et configuration locale — ne jamais versionner
+.env
+.env.*
+!.env.example
+
+# Données générées en local
+server/uploads/
+server/outbox/
+
+# Outils locaux
+.claude/
+*.log
+.DS_Store
+Thumbs.db
