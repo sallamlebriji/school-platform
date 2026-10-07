@@ -8,11 +8,14 @@ Architecture détaillée : [docs/ARCHITECTURE-MERN-MYSQL.md](docs/ARCHITECTURE-M
 ```
 server/   API Express + Sequelize + MySQL (multi-tenant, RBAC, Socket.IO, PDF, IA)
 client/   Application React (Vite) branchée sur l'API
+mobile/   Application React Native (Expo + TypeScript) Android / iOS
 docs/     Architecture
 index.html, app.html, assets/   Landing page + prototype statique
 ```
 
 ## Prérequis
+
+La version mobile et ses instructions sont disponibles dans [mobile/README.md](mobile/README.md). Elle utilise Node.js 22.13+ et la même API que le client web.
 
 - Node.js 18 ou plus
 - MySQL 8 ou MariaDB 10.4 ou plus (XAMPP convient)

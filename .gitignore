@@ -1,6 +1,7 @@
 # Dépendances et builds
 node_modules/
 dist/
+.expo/
 
 # Secrets et configuration locale — ne jamais versionner
 .env

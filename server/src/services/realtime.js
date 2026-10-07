@@ -11,7 +11,7 @@ let io = null;
 
 function initRealtime(server) {
   const { Server } = require('socket.io');
-  io = new Server(server, { cors: { origin: config.clientUrl, credentials: true } });
+  io = new Server(server, { cors: { origin: config.clientUrl.split(','), credentials: true } });
   io.use((socket, next) => {
     try {
       const p = jwt.verify(socket.handshake.auth.token, config.jwt.accessSecret);

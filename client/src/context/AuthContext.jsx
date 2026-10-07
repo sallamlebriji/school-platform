@@ -35,7 +35,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     if (!session) return undefined;
     api.get('/notifications').then(r => setUnread(r.data.unread)).catch(() => {});
-    const s = io({ auth: { token: getAccessToken() } });
+    const s = io(import.meta.env.VITE_API_URL || undefined, { auth: { token: getAccessToken() } });
     s.on('notification', () => setUnread(n => n + 1));
     setSocket(s);
     return () => s.disconnect();

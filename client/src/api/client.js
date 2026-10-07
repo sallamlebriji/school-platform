@@ -16,7 +16,7 @@ export const setLogoutHandler = fn => { onLogout = fn; };
 export const getTenantSlug = () => localStorage.getItem('athenee.tenant') || 'alfarabi';
 export const setTenantSlug = s => localStorage.setItem('athenee.tenant', s);
 
-export const api = axios.create({ baseURL: '/api', withCredentials: true });
+export const api = axios.create({ baseURL: `${import.meta.env.VITE_API_URL || ''}/api`, withCredentials: true });
 
 api.interceptors.request.use(cfg => {
   cfg.headers['X-Tenant'] = getTenantSlug();

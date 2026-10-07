@@ -28,7 +28,7 @@ async function openSession(req, res, user) {
     userId: user.id, refreshHash: sha256(refresh), userAgent: (req.get('User-Agent') || '').slice(0, 255), ip: req.ip,
     expiresAt: new Date(Date.now() + config.jwt.refreshDays * 86400000),
   });
-  res.cookie(COOKIE, refresh, { httpOnly: true, secure: config.isProd, sameSite: 'lax', path: '/api/auth', maxAge: config.jwt.refreshDays * 86400000 });
+  res.cookie(COOKIE, refresh, { httpOnly: true, secure: config.isProd, sameSite: config.isProd ? 'none' : 'lax', path: '/api/auth', maxAge: config.jwt.refreshDays * 86400000 });
   return signAccess(user);
 }
 
